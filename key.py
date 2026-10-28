@@ -116,7 +116,6 @@ secrets.semantic.terraform.hardcoded-variable.hardcoded-variable,hardcoded-varia
 secrets.semantic.terraform.provider_password.provider_password,provider_password,semantic,Configuration Password,WARNING,HIGH,terraform,"provider ""postgresql"" { password = ""PgP@ss2024!"" }",manual,
 secrets.semantic.xml.asp.machinekey.machineKey,machineKey,semantic,Private Key,ERROR,HIGH,generic,"<machineKey validationKey=""A1B2C3D4E5F60718293A4B5C6D7E8F901A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D"" decryptionKey=""0011223344556677"" />",manual,
 secrets.services.africastalking.africastalking,africastalking,services,AfricasTalking,CRITICAL,MEDIUM,regex,atsk_42761a9d6c46e0fc50591bb0476a75f4db88f15b035a604f28cd69d0fbd6f1f78cb883a3,regex,(?<REGEX>atsk_[a-f0-9]{72})
-secrets.services.aikido-oauth.aikido-oauth,aikido-oauth,services,Aikido,WARNING,MEDIUM,regex,AIK_SECRET_Wohzm78dOOqKbwEYmDRRXkk9Xp6zxD6R2ArNlvNLI22ajzylcwBFyrKMQcp3HwC0,regex,"(?<SECRET>AIK_SECRET_[A-Za-z0-9]{64,65})"
 secrets.services.aiproxy.aiproxy,aiproxy,services,AIProxy,INFO,MEDIUM,regex,v2|33f326a4|YXL3Og_5FaU7xLm3,regex,(?<REGEX>\b(v2\|[a-f0-9]{8}\|[A-Za-z0-9-_]{16})\b)
 secrets.services.airtable-oauth.airtable-oauth,airtable-oauth,services,Airtable,WARNING,MEDIUM,regex,"clientsecret
 
