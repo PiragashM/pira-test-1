@@ -257,7 +257,7 @@ BEGIN RSA PRIVATE KEY-----
 	
 -----",regex,(?<SECRET>(?<OUTER>(?i)-----\s*?BEGIN RSA PRIVATE KEY-----)(?<REGEX>[\s\S]*?)-----\s*?END RSA PRIVATE KEY\s*?-----)
 secrets.services.github_oauth.github_oauth,github_oauth,services,GitHub,CRITICAL,MEDIUM,regex,github]oedc7c96fd73c56fce9b5,regex,"(?i:github|client[-_]?id)(?:\R|.){0,40}(?<ID>\b([a-f0-9]{20})\b)"
-secrets.services.github_pat.github_pat,github_pat,services,GitHub,CRITICAL,MEDIUM,regex,ghp_nZMcJU6t6X4DwgS3X7HeFCHrMZP2wXbAXKMK,regex,"(?<REGEX>(ghp_[a-zA-Z0-9]{36}|github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}|\b((gho|ghu|ghs|ghr)_[a-zA-Z0-9_]{36,255})\b))"
+secrets.services.github_pat.github_pat,github_pat,services,GitHub,CRITICAL,MEDIUM,regex,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,regex,"(?<REGEX>(ghp_[a-zA-Z0-9]{36}|github_pat_[A-Za-z0-9]{22}_[A-Za-z0-9]{59}|\b((gho|ghu|ghs|ghr)_[a-zA-Z0-9_]{36,255})\b))"
 secrets.services.gitlab_agent.gitlab_agent,gitlab_agent,services,GitLab,CRITICAL,MEDIUM,regex,agent_tokenoJ6MfV9vmEKw_Jj5L264YxZ86gyHZFNM2LH5MI5nNl6PZh1iZMLFL,regex,"(?i:config\.token|agent[-_]?token)(?:\R|.){0,40}(?<REGEX>\b([A-Za-z0-9-_]{50})\b)"
 secrets.services.gitlabv2.gitlabv2,gitlabv2,services,GitLab,CRITICAL,MEDIUM,regex,glpat-nlbAH9_AiQjAp3PHhgNw,regex,"(?<REGEX>(glpat-[a-zA-Z0-9\-=_]{20,22}))"
 secrets.services.gnews.gnews,gnews,services,GNews,INFO,MEDIUM,regex,"gnews
